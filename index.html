@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Bassu - Personal Portfolio</title>
+
+	<!--
+    - favicon
+  -->
+	<link rel="shortcut icon" href="./assets/images/my-logo.svg" type="image/x-icon" />
+
+	<!--
+    - custom css link
+  -->
+	<link rel="stylesheet" href="./assets/css/style.css" />
+
+	<!--
+    - google font link
+  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+	<!--
+    - #MAIN
+  -->
+
+	<main>
+		<!--
+      - #SIDEBAR
+    -->
+
+		<aside class="sidebar" data-sidebar>
+			<div class="sidebar-info">
+				<figure class="avatar-box">
+					<img src="./assets/images/my-avatar.png" alt="basavaraj" width="80" />
+				</figure>
+
+				<div class="info-content">
+					<h1 class="name" title="Basavaraja K J">Basavaraja K J</h1>
+
+					<p class="title">Web developer</p>
+				</div>
+
+				<button class="info_more-btn" data-sidebar-btn>
+					<span>Show Contacts</span>
+
+					<ion-icon name="chevron-down"></ion-icon>
+				</button>
+			</div>
+
+			<div class="sidebar-info_more">
+				<div class="separator"></div>
+
+				<ul class="contacts-list">
+					<li class="contact-item">
+						<div class="icon-box">
+							<ion-icon name="mail-outline"></ion-icon>
+						</div>
+
+						<div class="contact-info">
+							<p class="contact-title">Email</p>
+
+							<a href="mailto:basavarajakj2000@gmail.com" class="contact-link">basavarajakj06@gmail.com</a>
+						</div>
+					</li>
+
+					<li class="contact-item">
+						<div class="icon-box">
+							<ion-icon name="phone-portrait-outline"></ion-icon>
+						</div>
+
+						<div class="contact-info">
+							<p class="contact-title">Phone</p>
+
+							<a href="tel:+91 9739283130" class="contact-link">+91 9739283130</a>
+						</div>
+					</li>
+
+					<li class="contact-item">
+						<div class="icon-box">
+							<ion-icon name="calendar-outline"></ion-icon>
+						</div>
+
+						<div class="contact-info">
+							<p class="contact-title">Birthday</p>
+
+							<time datetime="1982-06-23">June 17, 2000</time>
+						</div>
+					</li>
+
+					<li class="contact-item">
+						<div class="icon-box">
+							<ion-icon name="location-outline"></ion-icon>
+						</div>
+
+						<div class="contact-info">
+							<p class="contact-title">Location</p>
+
+							<address>Bengaluru, Karnataka. India</address>
+						</div>
+					</li>
+				</ul>
+
+				<div class="separator"></div>
+
+				<ul class="social-list">
+					<li class="social-item">
+						<a href="#" class="social-link">
+							<ion-icon name="logo-facebook"></ion-icon>
+						</a>
+					</li>
+
+					<li class="social-item">
+						<a href="#" class="social-link">
+							<ion-icon name="logo-twitter"></ion-icon>
+						</a>
+					</li>
+
+					<li class="social-item">
+						<a href="#" class="social-link">
+							<ion-icon name="logo-instagram"></ion-icon>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+
+		<!--
+      - #main-content
+    -->
+
+		<div class="main-content">
+			<!--
+        - #NAVBAR
+      -->
+
+			<nav class="navbar">
+				<ul class="navbar-list">
+					<li class="navbar-item">
+						<button class="navbar-link active" data-nav-link>About</button>
+					</li>
+
+					<li class="navbar-item">
+						<button class="navbar-link" data-nav-link>Resume</button>
+					</li>
+
+					<li class="navbar-item">
+						<button class="navbar-link" data-nav-link>Portfolio</button>
+					</li>
+
+					<li class="navbar-item">
+						<button class="navbar-link" data-nav-link>Contact</button>
+					</li>
+				</ul>
+			</nav>
+
+			<!--
+        - #ABOUT
+      -->
+
+			<article class="about active" data-page="about">
+				<header>
+					<h2 class="h2 article-title">About me</h2>
+				</header>
+
+				<section class="about-text">
+					<p>
+						Hello, and welcome to my portfolio! My name is Basavaraj , and I'm
+						a front end developer based in Bengaluru, India. I specialize in
+						front end web development, and I'm passionate about Web
+						development.
+					</p>
+
+					<p>
+						My portfolio showcases some of my best work, and I'm excited to
+						share it with you. If you have any questions or would like to
+						discuss a potential collaboration, please don't hesitate to
+						contact me. Thank you for taking the time to visit my portfolio,
+						and I look forward to hearing from you!
+					</p>
+				</section>
+
+				<!--
+          - service
+        -->
+
+				<section class="service">
+					<h3 class="h3 service-title">What i'm doing</h3>
+
+					<ul class="service-list">
+						<li class="service-item">
+							<div class="service-icon-box">
+								<img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40" />
+							</div>
+
+							<div class="service-content-box">
+								<h4 class="h4 service-item-title">Web design</h4>
+
+								<p class="service-item-text">
+									The most modern and high-quality design made at a
+									professional level.
+								</p>
+							</div>
+						</li>
+
+						<li class="service-item">
+							<div class="service-icon-box">
+								<img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40" />
+							</div>
+
+							<div class="service-content-box">
+								<h4 class="h4 service-item-title">Web development</h4>
+
+								<p class="service-item-text">
+									High-quality development of sites at the professional level.
+								</p>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</article>
+
+			<!--
+        - #RESUME
+      -->
+
+			<article class="resume" data-page="resume">
+				<header>
+					<h2 class="h2 article-title">Resume</h2>
+				</header>
+
+				<section class="timeline">
+					<div class="title-wrapper">
+						<div class="icon-box">
+							<ion-icon name="book-outline"></ion-icon>
+						</div>
+
+						<h3 class="h3">Education</h3>
+					</div>
+
+					<ol class="timeline-list">
+						<li class="timeline-item">
+							<h4 class="h4 timeline-item-title">
+								BANGALORE INSTT. OF TECHNOLOGY,BANGALORE
+							</h4>
+
+							<span>2023 - Present</span>
+
+							<p class="timeline-text">Master of Computer Applications</p>
+						</li>
+						<li class="timeline-item">
+							<h4 class="h4 timeline-item-title">Mangalore University</h4>
+
+							<span>2018-2021</span>
+
+							<p class="timeline-text">Bachelor of computer application</p>
+							<span>Aggregation: 84.36%</span>
+						</li>
+
+						<li class="timeline-item">
+							<h4 class="h4 timeline-item-title">
+								Varaprada kadur PU college
+							</h4>
+
+							<span>2016-2018</span>
+
+							<p class="timeline-text">Pre-university course</p>
+							<span>Aggregation: 88.23%</span>
+						</li>
+
+						<li class="timeline-item">
+							<h4 class="h4 timeline-item-title">Govt Junior College</h4>
+
+							<span>2012-2016</span>
+
+							<p class="timeline-text">
+								Secondary school leaving certificate
+							</p>
+							<span>Aggregation: 84.44%</span>
+						</li>
+					</ol>
+				</section>
+
+				<section class="skill">
+					<h3 class="h3 skills-title">My skills</h3>
+
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">HTML</h5>
+								<data value="80">80%</data>
+							</div>
+
+							<div class="skill-progress-bg">
+								<div class="skill-progress-fill" style="width: 80%"></div>
+							</div>
+						</li>
+
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">CSS</h5>
+								<data value="70">70%</data>
+							</div>
+
+							<div class="skill-progress-bg">
+								<div class="skill-progress-fill" style="width: 70%"></div>
+							</div>
+						</li>
+
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">Javascript</h5>
+								<data value="80">80%</data>
+							</div>
+
+							<div class="skill-progress-bg">
+								<div class="skill-progress-fill" style="width: 80%"></div>
+							</div>
+						</li>
+
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">React JS</h5>
+								<data value="70">70%</data>
+							</div>
+
+							<div class="skill-progress-bg">
+								<div class="skill-progress-fill" style="width: 70%"></div>
+							</div>
+						</li>
+
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">Next JS</h5>
+								<data value="40">40%</data>
+							</div>
+
+							<div class="skill-progress-bg">
+								<div class="skill-progress-fill" style="width: 40%"></div>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</article>
+
+			<!--
+        - #PORTFOLIO
+       -->
+
+			<article class="portfolio" data-page="portfolio">
+				<header>
+					<h2 class="h2 article-title">Portfolio</h2>
+				</header>
+
+				<section class="projects">
+					<ul class="filter-list">
+						<li class="filter-item">
+							<button class="active" data-filter-btn>All</button>
+						</li>
+
+						<li class="filter-item">
+							<button data-filter-btn>Landing Page</button>
+						</li>
+
+						<li class="filter-item">
+							<button data-filter-btn>Applications</button>
+						</li>
+
+						<li class="filter-item">
+							<button data-filter-btn>Web development</button>
+						</li>
+					</ul>
+
+					<div class="filter-select-box">
+						<button class="filter-select" data-select>
+							<div class="select-value" data-select-value>
+								Select category
+							</div>
+
+							<div class="select-icon">
+								<ion-icon name="chevron-down"></ion-icon>
+							</div>
+						</button>
+
+						<ul class="select-list">
+							<li class="select-item">
+								<button data-select-item>All</button>
+							</li>
+
+							<li class="select-item">
+								<button data-select-item>Landing Page</button>
+							</li>
+
+							<li class="select-item">
+								<button data-select-item>Applications</button>
+							</li>
+
+							<li class="select-item">
+								<button data-select-item>Web development</button>
+							</li>
+						</ul>
+					</div>
+
+					<ul class="project-list">
+						<li class="project-item active" data-filter-item data-category="landing page">
+							<a href="#">
+								<figure class="project-img">
+									<div class="project-item-icon-box">
+										<ion-icon name="eye-outline"></ion-icon>
+									</div>
+
+									<img src="./assets/images/fly.png" alt="finance" loading="lazy" data-project-img />
+								</figure>
+
+								<h3 class="project-title" project-title>
+									Fly - Luxury Jet Flights
+								</h3>
+
+								<p class="project-category" project-category>Landing Page</p>
+							</a>
+							<div class="project-content" project-content>
+								<p>
+									Fly is a landing page designed to showcase flight
+									information.To enhance the user experience, the landing page
+									will be optimized for both desktop and mobile devices,
+									allowing users to access the information they need on the
+									go.
+								</p>
+							</div>
+							<span class="tech-stack" tech-modal-stack>
+								<span> #ReactJS </span>
+								<span> #CSS3 </span>
+								<span> #ViteJS </span>
+							</span>
+							<a href="https://github.com/Basavarajakjbasuu/Fly" project-github-link></a>
+							<a href="https://fly-nine.vercel.app/" project-eye-link></a>
+						</li>
+
+						<li class="project-item active" data-filter-item data-category="application">
+							<a href="#">
+								<figure class="project-img">
+									<div class="project-item-icon-box">
+										<ion-icon name="eye-outline"></ion-icon>
+									</div>
+
+									<img src="./assets/images/weather.png" alt="dsm." loading="lazy" data-project-img />
+								</figure>
+
+								<h3 class="project-title" project-title>WeatherIO</h3>
+
+								<p class="project-category" project-category>
+									Application
+								</p>
+							</a>
+
+							<div class="project-content" project-content>
+								<p>WeatherIo is a web application that provides users with up-to-date weather and forecast details. With WeatherIo, users
+								can search for a location and get accurate and reliable weather information, including current temperature, wind speed,
+								humidity, and more. The application also features a 5-day forecast, allowing users to plan their activities accordingly.</p>
+							</div>
+							<span class="tech-stack" tech-modal-stack>
+								<span>#HTML5</span>
+								<span>#CSS3 </span>
+								<span>#Vanilla JS</span>
+								<span>#Vite JS </span>
+							</span>
+							<a href="https://github.com/Basavarajakjbasuu/WeatherIO" project-github-link></a>
+							<a href="https://weather-io-bassu.vercel.app/#/current-location" project-eye-link></a>
+						</li>
+
+						<li class="project-item active" data-filter-item data-category="landing page">
+							<a href="#">
+								<figure class="project-img">
+									<div class="project-item-icon-box">
+										<ion-icon name="eye-outline"></ion-icon>
+									</div>
+
+									<img src="./assets/images/Tourest.png" alt="finance" loading="lazy" data-project-img />
+								</figure>
+
+								<h3 class="project-title" project-title>Tourest</h3>
+
+								<p class="project-category" project-category>Landing Page</p>
+							</a>
+							<div class="project-content" project-content>
+								<p>
+									&ensp; Welcome to our tourest! Here, you'll find everything
+									you need to plan your next adventure to some of the world's
+									most exciting destinations.
+								</p>
+								<p>
+									&ensp; Our tourest have some recommended destinations, plan
+									your trip according to that. Start exploring today!
+								</p>
+							</div>
+							<span class="tech-stack" tech-modal-stack>
+								<span> #ReactJS </span>
+								<span> #CSS3 </span>
+								<span> #ViteJS </span>
+							</span>
+							<a href="https://github.com/Basavarajakjbasuu/Tourest-Lets-Explore-the-world-" project-github-link></a>
+							<a href="https://loquacious-arithmetic-772880.netlify.app/" project-eye-link></a>
+						</li>
+
+						<li class="project-item active" data-filter-item data-category="applications">
+							<a href="#">
+								<figure class="project-img">
+									<div class="project-item-icon-box">
+										<ion-icon name="eye-outline"></ion-icon>
+									</div>
+
+									<img src="./assets/images/lyrics.png" alt="someGeetha" loading="lazy" data-project-img />
+								</figure>
+
+								<h3 class="project-title" project-title>someGeetha</h3>
+
+								<p class="project-category" project-category>Applications</p>
+							</a>
+							<div class="project-content" project-content>
+								<p>
+									&ensp; Introducing the ultimate someGeetha app for our music
+									lovers! Our popular music application brings you the music
+									to all your favorite songs.
+								</p>
+								<p>
+									&ensp; So what are you waiting for? Explore our someGeetha
+									app today.
+								</p>
+							</div>
+							<span class="tech-stack" tech-modal-stack>
+								<span>#React(18.2)</span>
+								<span>#TailwindCSS </span>
+								<span>#Axios</span>
+								<span>#Shazamcore API</span>
+								<span>#ReactRouterDOM(6.3)</span>
+								<span>#SwiperJS</span>
+							</span>
+							<a href="https://github.com/Basavarajakjbasuu/lyricks" project-github-link></a>
+							<a href="https://lyricks-bassu.vercel.app/" project-eye-link></a>
+						</li>
+
+						<li class="project-item active" data-filter-item data-category="applications">
+							<a href="#">
+								<figure class="project-img">
+									<div class="project-item-icon-box">
+										<ion-icon name="eye-outline"></ion-icon>
+									</div>
+
+									<img src="./assets/images/youtube-clone.png" alt="summary" loading="lazy" data-project-img />
+								</figure>
+
+								<h3 class="project-title" project-title>Youtube Lite</h3>
+
+								<p class="project-category" project-category>Applications</p>
+							</a>
+
+							<div class="project-content" project-content>
+								<p>
+									&ensp; A YouTube Lite that can search and stream videos
+									would be a web application that mimics the functionality of
+									YouTube, allowing users to search for and watch videos
+									online.
+								</p>
+								<p>
+									&ensp; Overall, a successful YouTube Lite provide a
+									user-friendly interface, fast and reliable search and video
+									streaming technology.
+								</p>
+							</div>
+							<span class="tech-stack" tech-modal-stack>
+								<span> #ReactJS </span>
+								<span> #CSS3 </span>
+								<span> #RAPID API </span>
+								<span> #Axios </span>
+								<span> #ReactRouterDom(6.6) </span>
+							</span>
+							<a href="https://github.com/Basavarajakjbasuu/Photography-portfolio" project-github-link></a>
+							<a href="https://youtube-lite-clone.vercel.app/" project-eye-link></a>
+						</li>
+
+						<li class="project-item active" data-filter-item data-category="landing page">
+							<a href="#">
+								<figure class="project-img">
+									<div class="project-item-icon-box">
+										<ion-icon name="eye-outline"></ion-icon>
+									</div>
+
+									<img src="./assets/images/photoGraphy.png" alt="finance" loading="lazy" data-project-img />
+								</figure>
+
+								<h3 class="project-title" project-title>FOTOGRAFI</h3>
+
+								<p class="project-category" project-category>Landing Page</p>
+							</a>
+							<div class="project-content" project-content>
+								<p>
+									&ensp; A FOTOGRAFI portfolio landing page is a webpage that
+									showcases your photography work and serves as a hub for
+									potential clients to learn more about your skills and
+									services.
+								</p>
+								<p>
+									&ensp; With the right design and content, it can be a
+									powerful tool for showcasing your photography skills and
+									attracting new clients.
+								</p>
+							</div>
+							<span class="tech-stack" tech-modal-stack>
+								<span> #HTML5 </span>
+								<span> #CSS3 </span>
+								<span> #javascript </span>
+							</span>
+							<a href="https://github.com/Basavarajakjbasuu/Photography-portfolio" project-github-link></a>
+							<a href="https://basavarajakjbasuu.github.io/Photography-portfolio/" project-eye-link></a>
+						</li>
+
+						<li class="project-item active" data-filter-item data-category="applications">
+							<a href="#">
+								<figure class="project-img">
+									<div class="project-item-icon-box">
+										<ion-icon name="eye-outline"></ion-icon>
+									</div>
+
+									<img src="./assets/images/BassuMovies.gif" alt="arrival" loading="lazy" data-project-img />
+								</figure>
+
+								<h3 class="project-title" project-title>BassuMovies</h3>
+
+								<p class="project-category" project-category>
+									Applications
+								</p>
+							</a>
+							<div class="project-content" project-content>
+								<p>
+									&ensp; "Bassumovies" is a movie platform that provides all
+									the information a movie lover could want. With a vast
+									database of movies, users can search and discover their
+									favorite films and celebrities.
+								</p>
+								<p>
+									&ensp; Whether you're a casual moviegoer or a passionate
+									film buff, "Bassumovies" has something for everyone. Explore
+									the world of movies and celebrities today!
+								</p>
+							</div>
+							<span class="tech-stack" tech-modal-stack>
+								<span> #ReactJS </span>
+								<span> #SASS </span>
+								<span> #TMDB </span>
+								<span> #Axios </span>
+								<span> #ReduxJS </span>
+								<span> #ReactRouterDom(6.6) </span>
+							</span>
+							<a href="https://github.com/Basavarajakjbasuu/BassuMovies" project-github-link></a>
+							<a href="https://bassu-movie.vercel.app/" project-eye-link></a>
+						</li>
+
+						<li class="project-item active" data-filter-item data-category="web development">
+							<a href="#">
+								<figure class="project-img">
+									<div class="project-item-icon-box">
+										<ion-icon name="eye-outline"></ion-icon>
+									</div>
+
+									<img src="./assets/images/commingSoon.png" alt="dsm." loading="lazy" data-project-img />
+								</figure>
+
+								<h3 class="project-title" project-title>Meta clone</h3>
+
+								<p class="project-category" project-category>
+									Web development
+								</p>
+							</a>
+
+							<div class="project-content" project-content>
+								<p>Coming soon- currently working</p>
+							</div>
+							<span class="tech-stack" tech-modal-stack>
+								<span>#React(18.2)</span>
+								<span>#CSS3 </span>
+								<span>#Node JS</span>
+								<span>#Express JS</span>
+								<span>#MongoDB</span>
+							</span>
+							<a href="#" project-github-link></a>
+							<a href="#" project-eye-link></a>
+						</li>
+
+					</ul>
+				</section>
+
+				<!--
+          - project modal
+        	-->
+
+				<div class="modal-container" project-modal-container>
+					<div class="overlay" data-overlay></div>
+
+					<section class="project-modal">
+						<button class="modal-close-btn" data-modal-close-btn>
+							<ion-icon name="close-outline"></ion-icon>
+						</button>
+
+						<div class="modal-img-links-wrapper">
+							<div class="modal-img-wrapper">
+								<figure class="modal-avatar-box">
+									<img src="./assets/images/project-1.jpg" alt="Daniel lewis" project-modal-img />
+								</figure>
+							</div>
+							<div class="modal-icons">
+								<a href="#" target="_blank" class="social-link icon-box" data-modal-github>
+									<ion-icon name="logo-github"></ion-icon>
+								</a>
+								<a href="#" target="_blank" class="social-link icon-box" data-modal-eye>
+									<ion-icon name="eye-outline"></ion-icon>
+								</a>
+							</div>
+						</div>
+
+						<div class="modal-content">
+							<h4 class="h3 modal-title" data-modal-title></h4>
+
+							<span></span>
+
+							<div data-modal-text>
+								<p></p>
+							</div>
+							<div class="techStack">
+								<h5 class="h5">TECH-STACK:</h5>
+								<p tech-stack class="technology">
+									<span></span>
+								</p>
+							</div>
+						</div>
+					</section>
+				</div>
+			</article>
+
+			<!--
+        - #CONTACT
+      -->
+
+			<article class="contact" data-page="contact">
+				<header>
+					<h2 class="h2 article-title">Contact</h2>
+				</header>
+
+				<section class="mapbox" data-mapbox>
+					<figure>
+						<iframe
+							src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Bengaluru%20karnataka+(Bengaluru)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
+							width="400" height="300" loading="lazy"></iframe>
+					</figure>
+				</section>
+
+				<section class="contact-form">
+					<h3 class="h3 form-title">Contact Form</h3>
+
+					<form action="#" class="form" data-form>
+						<div class="input-wrapper">
+							<input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input />
+
+							<input type="email" name="email" class="form-input" placeholder="Email address" required
+								data-form-input />
+						</div>
+
+						<textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+						<button class="form-btn" type="submit" disabled data-form-btn>
+							<ion-icon name="paper-plane"></ion-icon>
+							<span>Send Message</span>
+						</button>
+					</form>
+				</section>
+			</article>
+		</div>
+	</main>
+
+	<!--
+    - custom js link
+  -->
+	<script src="./assets/js/script.js" defer></script>
+
+	<!--
+    - ionicon link
+  -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
