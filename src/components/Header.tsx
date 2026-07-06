@@ -44,11 +44,11 @@ export default function Header() {
           <p>Front end developer</p>
         </div>
 
-        <h1 className='text-4xl font-bold tracking-tight text-on-background md:text-7xl'>
+        <h1 className='text-4xl font-bold tracking-tight text-on-background md:text-5xl'>
           Basavaraja KJ <span className='text-primary'>(Bassu)</span>
         </h1>
 
-        <p className='text-xl text-on-surface-variant max-w-xl leading-relaxed'>
+        <p className='text-lg text-on-surface-variant max-w-xl leading-relaxed'>
           Crafting fluid digital experience where code meets human-centric
           design. Focused on scalable React ecosystems and robust cloud
           architecture
