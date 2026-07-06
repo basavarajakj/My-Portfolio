@@ -43,7 +43,7 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from '@/components/Dialog';
+} from '@/components/ui/Dialog';
 import { Label } from '@/components/ui/Label';
 import { Input } from '@/components/ui/Input';
 import { TextArea } from '@/components/ui/Textarea';
@@ -88,7 +88,7 @@ export function ContactDialog({ open, onOpen }: ContactDialogProps) {
         }, 2000);
       }
     },
-    [form.current],
+    [onOpen],
   );
 
   const formStateIcon = useMemo(

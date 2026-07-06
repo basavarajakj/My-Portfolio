@@ -23,6 +23,9 @@ import { cn } from './lib/utils';
  */
 import Header from './components/Header';
 import Profile from './components/Profile';
+import FeaturedProject from './components/FeaturedProject';
+import { Experience } from './components/Experience';
+import { Education } from './components/Eduction';
 
 /**
  * Assets
@@ -36,6 +39,12 @@ export default function App() {
 
         <motion.main>
           <Profile />
+
+          <FeaturedProject />
+
+          <Experience />
+
+          <Education />
         </motion.main>
       </div>
     </div>

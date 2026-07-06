@@ -36,7 +36,7 @@ export default function Profile() {
               icon={Location08Icon}
               className='w-5'
             />
-            <p className=''>Bengaluru, Ind</p>
+            <p className='font-bold text-lg'>Bengaluru, Ind</p>
           </span>
         </div>
       </div>
