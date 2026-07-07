@@ -40,13 +40,13 @@ export const Experience = () => {
               key={index}
               className='px-7 text-on-surface-variant relative before:absolute before:left-0 before:top-0 before:bg-primary before:size-4 before:rounded-full after:absolute after:left-1.75 after:top-0 after:bg-primary/15 after:w-0.5 after:h-full'
             >
-              <p className='text-xs font-bold text-primary mb-2'>
+              <p className='text-sm font-bold text-primary mb-2'>
                 {joinDate} - {!resignDate ? 'Present' : resignDate}
               </p>
 
-              <h3 className='font-bold text-on-surface mb-2'>{position}</h3>
+              <h3 className='font-bold text-on-surface'>{position}</h3>
 
-              <p className='text-sm'>{company}</p>
+              <p className='text-sm font-bold'>{company}</p>
 
               <ul className='mt-2'>
                 {achievements.map((achievement, index) => (

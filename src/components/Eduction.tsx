@@ -28,18 +28,26 @@ export const Education = () => {
           className='text-on-surface'
         />
 
-        <h2 className='font-bold text-xl text-on-surface'>Academic Path</h2>
+        <h2 className='font-bold text-xl text-on-surface'>
+          Education & Contributions
+        </h2>
       </CardTitle>
 
       <ol className='flex flex-col gap-2'>
         {EDUCATIONS.map(
-          ({ Icon, title, academy, certificate, year, skills }, index) => (
+          (
+            { Icon, title, description, academy, certificate, year, skills },
+            index,
+          ) => (
             <li
               className='flex items-start gap-3'
               key={index}
             >
               <div className='size-10 bg-primary-container grid place-content-center rounded-2xl text-on-primary-container'>
-                <HugeiconsIcon icon={Icon} size={20} />
+                <HugeiconsIcon
+                  icon={Icon}
+                  size={20}
+                />
               </div>
 
               <div className='space-y-1'>
@@ -50,6 +58,35 @@ export const Education = () => {
                 </p>
 
                 <p className='text-xs text-on-surface-variant/80'>{academy}</p>
+                {description && (
+                  <ul className='mt-2'>
+                    {description.map((desc, index) => (
+                      <li
+                        key={index}
+                        className='flex items-start gap-2 text-xs mt-1'
+                      >
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          width='12'
+                          height='12'
+                          viewBox='0 0 24 24'
+                          fill='none'
+                          stroke='currentColor'
+                          strokeWidth={2}
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          className='lucide text-primary lucide-trending-up-icon lucide-trending-up w-4 h-4 mt-0.5'
+                          aria-hidden
+                        >
+                          <path d='M16 7h6v6' />
+                          <path d='m22 7-8.5 8.5-5-5L2 17' />
+                        </svg>
+
+                        {desc}
+                      </li>
+                    ))}
+                  </ul>
+                )}
 
                 <ul className='flex flex-wrap gap-1 mt-2'>
                   {skills.map((skill, index) => (

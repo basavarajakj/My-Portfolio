@@ -46,47 +46,49 @@ export function ProjectCardSm({
   const [dialogOpen, setDialogOpen] = useState(false);
 
   return (
-    <div
-      className='relative flex items-center gap-4 bg-surface-container-low/70 p-3 not-last:mb-4 rounded-2xl transition-colors hover:bg-surface-container group'
-      {...props}
-    >
+    <>
       <div
-        className='size-12 shrink-0 grid place-items-center rounded-2xl'
-        style={{ backgroundColor: bg }}
+        className='relative flex items-center gap-4 bg-surface-container-low/70 p-3 not-last:mb-4 rounded-2xl transition-colors hover:bg-surface-container cursor-pointer group'
+        {...props}
+        onClick={() => setDialogOpen(true)}
       >
-        <HugeiconsIcon
-          icon={displayIcon}
-          size={20}
-          className='text-black/70'
-        />
-      </div>
-
-      <div>
-        <div className='flex gap-2'>
-          <h3 className='text-[16px] font-bold text-on-surface-variant flex items-center gap-2'>
-            {title}
-          </h3>
-          <button className='cursor-pointer'>
-            <HugeiconsIcon
-              icon={ExternalLinkIcon}
-              size={18}
-              className='opacity-0 transition group-hover:opacity-100'
-              onClick={() => setDialogOpen(true)}
-            />
-          </button>
-
-          <ProjectDialog
-            open={dialogOpen}
-            onOpen={() => setDialogOpen(false)}
-            project={project}
+        <div
+          className='size-12 shrink-0 grid place-items-center rounded-2xl'
+          style={{ backgroundColor: bg }}
+        >
+          <HugeiconsIcon
+            icon={displayIcon}
+            size={20}
+            className='text-black/70'
           />
         </div>
 
-        <p className='font-normal text-on-surface-variant/80 text-xs line-clamp-1'>
-          {description}
-        </p>
+        <div>
+          <div className='flex gap-2'>
+            <h3 className='text-[16px] font-bold text-on-surface-variant flex items-center gap-2'>
+              {title}
+            </h3>
+            <button className='cursor-pointer'>
+              <HugeiconsIcon
+                icon={ExternalLinkIcon}
+                size={18}
+                className='opacity-0 transition group-hover:opacity-100'
+              />
+            </button>
+          </div>
+
+          <p className='font-normal text-on-surface-variant/80 text-xs line-clamp-1'>
+            {description}
+          </p>
+        </div>
       </div>
-    </div>
+
+      <ProjectDialog
+        open={dialogOpen}
+        onOpen={() => setDialogOpen(false)}
+        project={project}
+      />
+    </>
   );
 }
 

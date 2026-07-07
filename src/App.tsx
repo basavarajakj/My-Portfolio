@@ -30,6 +30,7 @@ import { TechStack } from './components/TechStack';
 import { Button } from './components/ui/Button';
 import { HugeiconsIcon } from '@hugeicons/react';
 import { Moon02Icon, Sun02Icon } from '@hugeicons/core-free-icons';
+import { Footer } from './components/Footer';
 
 /**
  * Assets
@@ -43,7 +44,11 @@ export default function App() {
       <div className='max-w-7xl mx-auto flex flex-col gap-12'>
         <Header />
 
-        <motion.main className='grid grid-cols-1 gap-4 md:grid-cols-4 lg:grid-cols-6'>
+        <motion.main
+          className='grid grid-cols-1 gap-4 md:grid-cols-4 lg:grid-cols-6'
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+        >
           <Profile />
 
           <FeaturedProject />
@@ -54,6 +59,7 @@ export default function App() {
 
           <TechStack />
         </motion.main>
+        <Footer />
 
         <Button
           size='iconSmall'

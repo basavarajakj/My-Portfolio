@@ -13,7 +13,7 @@ import {
   TypeScript,
   NodeJs,
   Docker,
-  PostgreSQL,
+  TailwindCSS,
 } from '@/assets/TechStackIcons';
 import taskyaiBanner1 from '@/assets/taskyai-banner1.png';
 import taskyaiBanner2 from '@/assets/taskyai-banner2.png';
@@ -33,10 +33,11 @@ import styleLoom3 from '@/assets/styleloom3.png';
  */
 import type { Project } from '@/types';
 import {
-  Globe02Icon,
   ArtificialIntelligence04Icon,
   ChatBotIcon,
   ShoppingBag02Icon,
+  BookEditFreeIcons,
+  Github01Icon,
 } from '@hugeicons/core-free-icons';
 
 export const PROFILE_TAGS = [
@@ -160,58 +161,47 @@ export const PROJECTS: Project[] = [
 
     githubUrl: 'https://github.com/basavarajakj/style-loom',
     bg: '#E2F1E6',
-    Icon: ShoppingBag02Icon
+    Icon: ShoppingBag02Icon,
   },
 ];
 
 export const EXPERIENCES = [
   {
-    company: 'CloudScale System',
-    position: 'Senior Backend Engineer',
-    joinDate: '2021',
+    company: 'Cognizant technology solution',
+    position: 'Junior software engineer',
+    joinDate: '2022',
+    resignDate: null,
     achievements: [
-      'Led migration to microservices architecture, improving system scalability by 300%',
-      'Mentored team of 8 junior developers',
+      'Developed scalable, responsive web applications with React.js, Next.js, and TypeScript.',
+      'Integrated REST APIs and implemented JWT-based authentication for secure access.',
+      'Simplified state management using Redux Toolkit, improving code maintainability.',
+      'Enhanced application performance through lazy loading, code splitting, and memoization.',
     ],
-    skills: ['React', 'Node.js', 'AWS'],
-  },
-  {
-    company: 'Nexus Labs',
-    position: 'Full Stack Developer',
-    joinDate: '2019',
-    resignDate: '2021',
-    achievements: [
-      'Built real-time analytics dashboard serving 50K+ users',
-      'Implemented CI/CD pipeline reducing bugs by 60%',
-    ],
-    skills: ['View.js', 'Python', 'PostgreSQL'],
+    skills: ['React', 'Next.js', 'Node.js', 'TypeScript', 'Docker'],
   },
 ];
 
 export const EDUCATIONS = [
   {
-    title: 'B.S. Computer Science',
-    academy: 'Tech Institute of Excellence',
-    year: '2019',
-    certificate: 'Graduated with Honors',
-    Icon: Globe02Icon,
-    skills: ['Algorithm', 'Distributed Systems', 'ML'],
+    title: 'Master of Computer Applications (MCA)',
+    academy: 'Bangalore Institute of Technology',
+    year: '2025',
+    certificate: 'Graduated with Distinction',
+    Icon: BookEditFreeIcons,
+    skills: ['Algorithms', 'Database Systems', 'Software Engineering'],
   },
   {
-    title: 'AWS Certified Architect',
-    academy: 'Amazon Web Services',
-    year: '2022',
-    certificate: 'Amazon Web Services',
-    Icon: Globe02Icon,
-    skills: ['Cloud Architecture', 'Security', 'Cost Optimization'],
-  },
-  {
-    title: 'Google Cloud Professional',
-    academy: 'Google Cloud',
-    year: '2023',
-    certificate: 'Google Cloud',
-    Icon: Globe02Icon,
-    skills: ['Infrastructure', 'DevOps', 'Networking'],
+    title: 'Open Source Contributions',
+    year: '2024 - Present',
+    certificate: 'Active Open Source Contributor',
+    description: [
+      'Contributed to open-source projects on GitHub.',
+      'Fixed bugs and improved existing features.',
+      'Implemented new features and UI enhancements.',
+      'Collaborated with developers through pull requests.',
+    ],
+    Icon: Github01Icon,
+    skills: ['open source', 'Git', 'GitHub', 'React', 'Next.js', 'TypeScript'],
   },
 ];
 
@@ -225,6 +215,10 @@ export const TECH_STACKS = [
     Icon: NextJs,
   },
   {
+    name: 'TailwindCSS',
+    Icon: TailwindCSS,
+  },
+  {
     name: 'TypeScript',
     Icon: TypeScript,
   },
@@ -236,23 +230,19 @@ export const TECH_STACKS = [
     name: 'Docker',
     Icon: Docker,
   },
-  {
-    name: 'PostgreSQL',
-    Icon: PostgreSQL,
-  },
 ];
 
 export const FOOTER_LINKS = [
+  // {
+  //   url: '#',
+  //   label: 'Resume',
+  // },
   {
-    url: '#',
-    label: 'Resume',
-  },
-  {
-    url: '#',
+    url: 'https://linkedin.com/in/basavarajakj',
     label: 'LinkedIn',
   },
   {
-    url: '#',
+    url: 'https://github.com/basavarajakj',
     label: 'Github',
   },
 ];
