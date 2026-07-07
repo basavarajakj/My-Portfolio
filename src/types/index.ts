@@ -6,13 +6,29 @@
 /**
  * Types
  */
-import type { HugeiconsIcon } from '@hugeicons/react';
+// import { Globe02Icon } from '@hugeicons/core-free-icons';
+
+// export type HugeIconType = typeof Globe02Icon;
 
 export interface Project {
-  Icon: HugeiconsIcon;
-  bg: string;
   title: string;
-  desc: string;
+  subtitle: string;
+
+  description: string;
+
+  images: string[];
+
+  features: string[];
+
   techStacks: string[];
-  projectUrl: string;
+
+  projectUrl?: string;
+
+  githubUrl: string;
+
+  featured?: boolean;
+
+  status: 'Completed' | 'In Progress';
+  bg?: string;
+  Icon?: any;
 }

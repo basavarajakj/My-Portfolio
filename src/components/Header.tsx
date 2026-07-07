@@ -91,7 +91,7 @@ export default function Header() {
             asChild
           >
             <a
-              href='www.linkedin.com/in/basavarajakj'
+              href='https://linkedin.com/in/basavarajakj'
               target='_blank'
               aria-label="Basavaraja's linkedin"
             >

@@ -1,21 +1,12 @@
 /**
- * @copyright 2026 codewithsadee
+ * @copyright 2026 Basavaraja KJ
  * @license Apache-2.0
  */
 
 /**
  * Assets
  */
-import {
-  CpuIcon,
-  GlobeIcon,
-  LayersIcon,
-  MailIcon,
-  SparklesIcon,
-  TerminalIcon,
-  GraduationCapIcon,
-  AwardIcon,
-} from 'lucide-react';
+
 import {
   React,
   NextJs,
@@ -24,68 +15,152 @@ import {
   Docker,
   PostgreSQL,
 } from '@/assets/TechStackIcons';
+import taskyaiBanner1 from '@/assets/taskyai-banner1.png';
+import taskyaiBanner2 from '@/assets/taskyai-banner2.png';
+import taskyaiBanner from '@/assets/taskyai-banner.png';
+import taskyaiThumnail from '@/assets/taskyai-thumbnail.png';
+import phoenixThumbnail from '@/assets/phoenix-thumnail.png';
+import phoenixBanner from '@/assets/phoenix.png';
+import phoenixBanner1 from '@/assets/phoenix1.png';
+import phoenixBanner2 from '@/assets/phoenix2.png';
+import styleLoom from '@/assets/styleloom.png';
+import styleLoom1 from '@/assets/styleloom1.png';
+import styleLoom2 from '@/assets/styleloom2.png';
+import styleLoom3 from '@/assets/styleloom3.png';
 
 /**
  * Types
  */
 import type { Project } from '@/types';
+import {
+  Globe02Icon,
+  ArtificialIntelligence04Icon,
+  ChatBotIcon,
+  ShoppingBag02Icon,
+} from '@hugeicons/core-free-icons';
 
 export const PROFILE_TAGS = [
   'React 19',
+  'Next.js',
   'TypeScript',
   'Node.js',
-  'AWS',
-  'GraphQL',
+  'Redux',
 ];
 
 export const PROJECTS: Project[] = [
   {
-    Icon: GlobeIcon,
+    title: 'Tasky AI',
+
+    subtitle: 'AI Powered Productivity Platform',
+
+    description:
+      'An intelligent task management application powered by AI. It helps you organize, prioritize, and complete your tasks with intelligent assistance.',
+
+    featured: true,
+
+    status: 'Completed',
+
+    images: [taskyaiThumnail, taskyaiBanner2, taskyaiBanner1, taskyaiBanner],
+
+    features: [
+      'AI Task Generator',
+      'Authentication',
+      'Analytics Dashboard',
+      'Dark Mode',
+      'Responsive Design',
+      'Reusable Components',
+    ],
+
+    techStacks: [
+      'React 19',
+      'TypeScript',
+      'Tailwind CSS',
+      'Radix UI',
+      'Appwrite',
+      'Google Generative AI',
+    ],
+
+    projectUrl: 'https://taskyai-lake.vercel.app/',
+
+    githubUrl: 'https://github.com/basavarajakj/taskyai',
     bg: '#D0E4FF',
-    title: 'EcoSphere AI',
-    desc: 'A comprehensive sustainability tracking platform that uses machine learning to analyze carbon footprints and provide actionable insights for businesses and individuals.',
-    techStacks: ['React', 'Node.js', 'AI'],
-    projectUrl: '',
+    Icon: ArtificialIntelligence04Icon,
   },
   {
-    Icon: CpuIcon,
+    title: 'Phoenix AI',
+
+    subtitle: 'Conversational AI Assistant',
+
+    description:
+      'A conversational assistant delivering natural conversations, creative content, coding help, and productivity through a modern, responsive interface.',
+
+    featured: true,
+
+    status: 'Completed',
+
+    images: [phoenixThumbnail, phoenixBanner, phoenixBanner1, phoenixBanner2],
+
+    features: [
+      'Human-like Conversational AI',
+      'Context-Aware Multi-turn Chat',
+      'Markdown & Rich Text Rendering',
+      'Smart Prompt Suggestions',
+      'Conversation History',
+      'Secure Authentication',
+    ],
+
+    techStacks: [
+      'React 19',
+      'TypeScript',
+      'Tailwind CSS v4',
+      'Google Gemini API',
+      'Motion',
+      'Vite',
+    ],
+
+    projectUrl: 'https://phoenix-three-rho.vercel.app/',
+
+    githubUrl: 'https://github.com/basavarajakj/phoenix',
     bg: '#FAD8FD',
-    title: 'NeuroFlow',
-    desc: 'Real-time productivity dashboard that syncs with biometric devices to optimize work schedules based on focus levels and energy patterns.',
-    techStacks: ['Next.js', 'Socket.io'],
-    projectUrl: '',
+    Icon: ChatBotIcon,
   },
   {
-    Icon: TerminalIcon,
+    title: 'Style.loom',
+
+    subtitle: 'Modern E-Commerce Platform',
+
+    description:
+      'Style.loom is a full-stack e-commerce platform supporting customers, vendors, and administrators with secure authentication, product management, payments, and a responsive shopping experience.',
+
+    featured: true,
+
+    status: 'In Progress',
+
+    images: [styleLoom, styleLoom1, styleLoom2, styleLoom3],
+
+    features: [
+      'Multi-Role Authentication',
+      'Vendor & Admin Dashboard',
+      'Product & Inventory Management',
+      'Shopping Cart & Checkout',
+      'Stripe Payment Integration',
+      'Advanced Data Tables',
+    ],
+
+    techStacks: [
+      'React 19',
+      'TanStack Start',
+      'TypeScript',
+      'Drizzle ORM',
+      'Better Auth',
+      'Stripe',
+    ],
+
+    // projectUrl: '...',
+
+    githubUrl: 'https://github.com/basavarajakj/style-loom',
     bg: '#E2F1E6',
-    title: 'Veritas API',
-    desc: 'High-performance authentication gateway built for Web3 applications with zero-knowledge proof integration and distributed session management.',
-    techStacks: ['Go', 'Redis', 'Docker'],
-    projectUrl: '',
-  },
-  {
-    Icon: LayersIcon,
-    bg: '#FFE8D6',
-    title: 'CloudSync Pro',
-    desc: 'Enterprise-grade cloud storage management system that seamlessly integrates AWS, Azure, and GCP for unified data management.',
-    techStacks: ['Vue.js', 'Python', 'Kubernetes'],
-    projectUrl: '',
-  },
-  {
-    Icon: SparklesIcon,
-    bg: '#E8F5E9',
-    title: 'DataViz Studio',
-    desc: 'Powerful data visualization toolkit with real-time rendering capabilities for large datasets using WebGL acceleration.',
-    techStacks: ['D3.js', 'React', 'WebGL'],
-    projectUrl: '',
-  },
-  {
-    Icon: MailIcon,
-    bg: '#FFF3E0',
-    title: 'SecureChat',
-    desc: 'Privacy-focused messaging app with military-grade encryption, self-destructing messages, and decentralized architecture.',
-    techStacks: ['React Native', 'WebRTC', 'Rust'],
-    projectUrl: '',
+    Icon: ShoppingBag02Icon
   },
 ];
 
@@ -119,7 +194,7 @@ export const EDUCATIONS = [
     academy: 'Tech Institute of Excellence',
     year: '2019',
     certificate: 'Graduated with Honors',
-    Icon: GraduationCapIcon,
+    Icon: Globe02Icon,
     skills: ['Algorithm', 'Distributed Systems', 'ML'],
   },
   {
@@ -127,7 +202,7 @@ export const EDUCATIONS = [
     academy: 'Amazon Web Services',
     year: '2022',
     certificate: 'Amazon Web Services',
-    Icon: AwardIcon,
+    Icon: Globe02Icon,
     skills: ['Cloud Architecture', 'Security', 'Cost Optimization'],
   },
   {
@@ -135,7 +210,7 @@ export const EDUCATIONS = [
     academy: 'Google Cloud',
     year: '2023',
     certificate: 'Google Cloud',
-    Icon: AwardIcon,
+    Icon: Globe02Icon,
     skills: ['Infrastructure', 'DevOps', 'Networking'],
   },
 ];

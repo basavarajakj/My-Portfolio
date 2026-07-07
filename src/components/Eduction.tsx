@@ -39,7 +39,7 @@ export const Education = () => {
               key={index}
             >
               <div className='size-10 bg-primary-container grid place-content-center rounded-2xl text-on-primary-container'>
-                <Icon size={20} />
+                <HugeiconsIcon icon={Icon} size={20} />
               </div>
 
               <div className='space-y-1'>
